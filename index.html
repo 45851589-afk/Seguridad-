@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TurLux Games & Software | Native Linux Ecosystem</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+
+    <!-- Navegacion Principal -->
+    <header class="navbar">
+        <div class="nav-container">
+            <a href="#" class="brand-logo">
+                <i class="fa-solid fa-terminal logo-icon"></i>
+                <span class="logo-text">TurLux<span class="logo-highlight">OS</span></span>
+            </a>
+            
+            <nav class="nav-links">
+                <a href="#inicio" class="nav-link active">Inicio</a>
+                <a href="#productos" class="nav-link">Productos</a>
+                <a href="#seguridad" class="nav-link">Seguridad</a>
+                <a href="#terminal" class="nav-link">Instalador</a>
+            </nav>
+
+            <div class="nav-actions">
+                <a href="#productos" class="btn btn-primary">
+                    <i class="fa-solid fa-download"></i> Descargas
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-section">
+        <div class="hero-container">
+            <div class="hero-badge">
+                <i class="fa-brands fa-linux"></i> Software & Juegos Nativo para Linux
+            </div>
+            <h1 class="hero-title">Rendimiento puro.<br><span class="gradient-text">Sin capas de compatibilidad.</span></h1>
+            <p class="hero-subtitle">
+                Desarrollamos motores graficos, videojuegos de alto rendimiento y herramientas de productividad disenadas exclusivamente para kernels Linux.
+            </p>
+            <div class="hero-buttons">
+                <a href="#productos" class="btn btn-primary btn-large">
+                    Explorar Catálogo <i class="fa-solid fa-arrow-right"></i>
+                </a>
+                <a href="#seguridad" class="btn btn-secondary btn-large">
+                    Políticas de Seguridad <i class="fa-solid fa-shield-halved"></i>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Filtros y Catalogo de Productos -->
+    <section id="productos" class="products-section">
+        <div class="section-container">
+            <div class="section-header">
+                <h2 class="section-title">Ecosistema de Software</h2>
+                <p class="section-subtitle">Aplicaciones compiladas para distribuciones basadas en Debian, Arch y Fedora</p>
+            </div>
+
+            <!-- Categorias de Filtrado -->
+            <div class="category-filters">
+                <button class="filter-btn active" data-filter="all">Todos</button>
+                <button class="filter-btn" data-filter="os">Sistemas</button>
+                <button class="filter-btn" data-filter="games">Juegos</button>
+                <button class="filter-btn" data-filter="dev">Desarrollo</button>
+                <button class="filter-btn" data-filter="sec">Seguridad</button>
+            </div>
+
+            <!-- Grilla de Productos -->
+            <div class="product-grid">
+                
+                <!-- Producto 1 -->
+                <article class="product-card" data-category="os">
+                    <div class="card-badge">OS / Sistema</div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-desktop"></i>
+                    </div>
+                    <h3 class="product-title">TurLux OS Workstation</h3>
+                    <p class="product-description">
+                        Distribucion de alto rendimiento optimizada para desarrolladores y creadores de contenido. Incluye drivers proprietarios preconfigurados.
+                    </p>
+                    <ul class="product-specs">
+                        <li><i class="fa-solid fa-microchip"></i> Kernel 6.8 LTS Native</li>
+                        <li><i class="fa-solid fa-memory"></i> RAM Minima: 4 GB</li>
+                        <li><i class="fa-solid fa-lock"></i> Firma Digital GPG</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="price">Gratuito / Open Source</span>
+                        <a href="#terminal" class="btn btn-secondary btn-small">Instalar</a>
+                    </div>
+                </article>
+
+                <!-- Producto 2 -->
+                <article class="product-card" data-category="games">
+                    <div class="card-badge badge-game">Juego Nativo</div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-gamepad"></i>
+                    </div>
+                    <h3 class="product-title">Stellar Blade: Vanguard</h3>
+                    <p class="product-description">
+                        Juego de accion y estrategia espacial desarrollado con nuestro motor Vulkan nativo. Rendimiento sostenido a mas de 144 FPS.
+                    </p>
+                    <ul class="product-specs">
+                        <li><i class="fa-solid fa-cubes"></i> Vulkan API 1.3</li>
+                        <li><i class="fa-solid fa-hard-drive"></i> Espacio: 25 GB</li>
+                        <li><i class="fa-solid fa-users"></i> Multijugador P2P</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="price">$19.99 USD</span>
+                        <a href="#" class="btn btn-primary btn-small">Comprar</a>
+                    </div>
+                </article>
+
+                <!-- Producto 3 -->
+                <article class="product-card" data-category="dev">
+                    <div class="card-badge badge-dev">Herramienta Dev</div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-code"></i>
+                    </div>
+                    <h3 class="product-title">PinguForge Studio</h3>
+                    <p class="product-description">
+                        Entorno de desarrollo integrado (IDE) para sistemas Linux con compilacion paralela automatizada y soporte nativo C++/Rust.
+                    </p>
+                    <ul class="product-specs">
+                        <li><i class="fa-solid fa-bolt"></i> Compilacion ultra rapida</li>
+                        <li><i class="fa-solid fa-code-branch"></i> Git Integrado</li>
+                        <li><i class="fa-solid fa-plug"></i> Soporte para Plugins</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="price">Gratuito</span>
+                        <a href="#terminal" class="btn btn-secondary btn-small">Instalar</a>
+                    </div>
+                </article>
+
+                <!-- Producto 4 -->
+                <article class="product-card" data-category="sec">
+                    <div class="card-badge badge-sec">Ciberseguridad</div>
+                    <div class="card-icon">
+                        <i class="fa-solid fa-user-shield"></i>
+                    </div>
+                    <h3 class="product-title">TurLux CyberShield Enterprise</h3>
+                    <p class="product-description">
+                        Suite de monitoreo de red, auditoria de secretos y proteccion contra vectores de amenaza en servidores Linux.
+                    </p>
+                    <ul class="product-specs">
+                        <li><i class="fa-solid fa-shield-cat"></i> Auditoria de Logs</li>
+                        <li><i class="fa-solid fa-key"></i> Escaneo de Secretos</li>
+                        <li><i class="fa-solid fa-network-wired"></i> Firewall de Red</li>
+                    </ul>
+                    <div class="card-footer">
+                        <span class="price">Licencia Enterprise</span>
+                        <a href="#" class="btn btn-primary btn-small">Contactar</a>
+                    </div>
+                </article>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Seccion de Seguridad / Certificaciones -->
+    <section id="seguridad" class="security-section">
+        <div class="section-container">
+            <div class="security-card">
+                <div class="security-info">
+                    <span class="security-tag"><i class="fa-solid fa-certificate"></i> Garantia TurLux</span>
+                    <h2>Infraestructura Cifrada y Codigo Limpio</h2>
+                    <p>
+                        En cumplimiento estricto con nuestras politicas corporativas de seguridad, todo nuestro software pasa por revisiones por pares, analisis estatico continuo y firmas digitales para garantizar descargas autenticas y libres de vulnerabilidades.
+                    </p>
+                    <div class="security-features">
+                        <div class="feature-item">
+                            <i class="fa-solid fa-key"></i>
+                            <span>Claves SSH personales y cifrado RSA/ED25519</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-cloud-arrow-up"></i>
+                            <span>Copias de seguridad diarias automatizadas</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fa-solid fa-user-lock"></i>
+                            <span>Autenticacion de Doble Factor (2FA) obligatoria</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Generador de Comandos Terminal -->
+    <section id="terminal" class="terminal-section">
+        <div class="section-container">
+            <div class="terminal-window">
+                <div class="terminal-header">
+                    <div class="terminal-buttons">
+                        <span class="dot red"></span>
+                        <span class="dot yellow"></span>
+                        <span class="dot green"></span>
+                    </div>
+                    <div class="terminal-title">bash - turlux-installer</div>
+                </div>
+                <div class="terminal-body">
+                    <p class="terminal-comment"># Agrega el repositorio oficial de TurLux a tu sistema</p>
+                    <div class="command-line">
+                        <span class="prompt">user@linux:~$</span>
+                        <span class="command">sudo add-apt-repository ppa:turlux-games/ppa && sudo apt update</span>
+                    </div>
+                    <p class="terminal-comment"># Instala la suite completa</p>
+                    <div class="command-line">
+                        <span class="prompt">user@linux:~$</span>
+                        <span class="command">sudo apt install turlux-desktop-suite</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-container">
+            <p>&copy; 2026 TurLux Games & Software S.A. Todos los derechos reservados.</p>
+            <p class="footer-subtext">Desarrollo nativo y seguro para el ecosistema GNU/Linux.</p>
+        </div>
+    </footer>
+
+</body>
+                                                          </html>
+                                                          
